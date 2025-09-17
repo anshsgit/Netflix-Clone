@@ -18,18 +18,20 @@ const Home = () => {
         <img src={hero_title} alt="" className={styles.captionImg} />
         <p className={styles.captionText}>Discovering his ties to a secret order, a young man living in modern Istanbul embark on a quest to save the city from an immortal enemy.</p>
 
-        <div className="buttons">
+        <div className={styles.button}>
           <button className={styles.btn}><img src={play_icon} alt="" />Play</button>
           <button className={`${styles.btn} ${styles.darkBtn}`}><img src={info_icon} alt="" />More Info</button>
         </div>
-        <TitleCards />
+        <div className={styles.titleCards}>
+          <TitleCards movieList="now_playing" />
+        </div>
       </div>
       </div>
 
       <div className={styles.moreCards}>
-        <TitleCards title="Blockbuster Movies" />
-        <TitleCards title="Only on Netflix" />
-        <TitleCards title="Upcoming" />
+        <TitleCards title="Blockbuster Movies" movieList="popular" />
+        <TitleCards title="Only on Netflix" movieList="top_rated" />
+        <TitleCards title="Upcoming" movieList="upcoming" />
         <TitleCards title="Top Picks for You" />
       </div>
 

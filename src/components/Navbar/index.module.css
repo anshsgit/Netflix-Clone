@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    padding: 20px 6%;
+    padding: 20px 4%;
     display: flex;
     justify-content: space-between;
     font-size: .875rem;
@@ -18,13 +18,11 @@
 
 .navbarLeft img {
     width: 90px;
-    height: auto;
+    height: 20px;
 }
 
 .navbarLeft ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    display: none;
 }
 
 .navbarLeft ul,
@@ -36,12 +34,12 @@
 
 .navbarRight {
     display: flex;
-    gap: 20px;
+    gap: 8px;
     align-items: center;
 }
 
 .navbarRight .icons {
-    width: 20px;
+    width: 18px;
 }
 
 .navbarProfile {
@@ -76,4 +74,42 @@
 
 .navbarProfile:hover .dropdown {
     display: block;
+}
+
+.navDark {
+    background: #141414;
+}
+
+@media only screen and (min-width: 500px) {
+    .navbar img {
+        height: 25px;
+    }
+
+    .navbarRight {
+        gap: 12px;
+    }
+
+    .navbarRight .icons {
+        width: 20px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    .navbarLeft ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbarRight {
+        gap: 20px;
+    }
+
+    .navbar img {
+        height: auto;
+    }
 }

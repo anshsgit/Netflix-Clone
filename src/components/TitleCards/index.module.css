@@ -32,3 +32,36 @@
     bottom: 10px;
     right: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+    .titleCards {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .titleCards h2 {
+        font-size: 20px;
+    }
+
+    .cardList img {
+        width: 200px;
+    }
+
+    .cardList p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .titleCards h2 {
+        font-size: 15px;
+    }
+
+    .cardList img {
+        width: 165px;
+    }
+
+    .cardList p {
+        font-size: 10px;
+    }
+}

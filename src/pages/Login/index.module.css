@@ -1,7 +1,7 @@
 .login {
     height: 100vh;
     background-image: linear-gradient(#0000007e, #0000007e), url(../../assets/background_banner.jpg);
-    padding: 20px 8%;
+    padding: 15px 5%;
 }
 
 .loginLogo {
@@ -13,8 +13,8 @@
     max-width: 450px;
     background: rgba(0,0,0,0.75);
     border-radius: 4px;
-    padding: 60px;
-    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 .loginForm h1 {
@@ -82,4 +82,28 @@
 
 .hidden {
     display: none;
+}
+
+.loginSpinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginSpinner img {
+    width: 60px;
+
+}
+
+@media only screen and (min-width: 500px) {
+    .login {
+        padding: 20px 8%;
+    }
+
+    .loginForm {
+        padding: 60px;
+        margin: auto;
+    }
 }
