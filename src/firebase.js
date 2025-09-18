@@ -40,7 +40,7 @@ const signup = async (name, email, password) => {
 
   } catch(error) {
       console.error(error);
-      toast.error(error.code);
+      toast.error(error.code.slice(5));
   }
 }
 
@@ -50,7 +50,7 @@ const login = async (email, password) => {
     navigate("/");
   } catch(error) {
       console.error(error);
-      toast.error(error.code);
+      toast.error(error.code.slice(5));
   }
 }
 
